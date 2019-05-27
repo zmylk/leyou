@@ -35,7 +35,7 @@
                     <!-- 注意imageName一定要是符合正则[a-z0-9-_.]的，否则构建不会成功 -->
                     <!-- 详见：https://github.com/spotify/docker-maven-plugin    Invalid repository name ... only [a-z0-9-_.] are allowed-->
                     <!--生成镜像名称-->
-                    <imageName>192.168.1.128:5000/${project.artifactId}:${project.version}</imageName>
+                    <imageName>192.168.1.131:5000/${project.artifactId}:${project.version}</imageName>
                     <!--基础镜像 对比dockerfile-->
                     <baseImage>jdk1.8</baseImage>
                     <entryPoint>["java", "-jar", "/${project.build.finalName}.jar"]</entryPoint>
@@ -46,7 +46,7 @@
                             <include>${project.build.finalName}.jar</include>
                         </resource>
                     </resources>
-                    <dockerHost>http://192.168.1.128:2375</dockerHost>
+                    <dockerHost>http://192.168.1.131:2375</dockerHost>
                 </configuration>
             </plugin>
         </plugins>
