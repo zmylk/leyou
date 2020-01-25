@@ -14,11 +14,9 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
-import java.io.File;
+
 import java.io.IOException;
-import java.lang.reflect.Array;
-import java.util.Arrays;
-import java.util.List;
+
 
 @Service
 @Slf4j
@@ -31,7 +29,7 @@ public class UploadService {
 
 
     //private static final List<String> ALLOW_TYPES = Arrays.asList("image/png","image/jpeg","image/bmp");
-    public String uploadImage(MultipartFile file) {
+        public String uploadImage(MultipartFile file) {
 
 
         try {
